@@ -39,7 +39,7 @@ export function App() {
 	console.log(data);
 
 	return (
-		<div className="bg-purple-400 rounded-md p-8 w-[380px]">
+		<div className="bg-purple-400 rounded-md p-8 w-[290px] sm:w-[380px]">
 			<Form onFormSubmit={setCity} />
 			<Main name={data.location} temperature={data.temperature} />
 			<Footer humidity={data.humidity} wind={data.windSpeed} />
